@@ -129,29 +129,53 @@ BER/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BER.dir/build.make CMakeFiles/BER.dir/build
 .PHONY : BER/fast
 
-bitcoin.o: bitcoin.cc.o
-.PHONY : bitcoin.o
+src/bitcoin.o: src/bitcoin.cc.o
+.PHONY : src/bitcoin.o
 
 # target to build an object file
-bitcoin.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BER.dir/build.make CMakeFiles/BER.dir/bitcoin.cc.o
-.PHONY : bitcoin.cc.o
+src/bitcoin.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BER.dir/build.make CMakeFiles/BER.dir/src/bitcoin.cc.o
+.PHONY : src/bitcoin.cc.o
 
-bitcoin.i: bitcoin.cc.i
-.PHONY : bitcoin.i
+src/bitcoin.i: src/bitcoin.cc.i
+.PHONY : src/bitcoin.i
 
 # target to preprocess a source file
-bitcoin.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BER.dir/build.make CMakeFiles/BER.dir/bitcoin.cc.i
-.PHONY : bitcoin.cc.i
+src/bitcoin.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BER.dir/build.make CMakeFiles/BER.dir/src/bitcoin.cc.i
+.PHONY : src/bitcoin.cc.i
 
-bitcoin.s: bitcoin.cc.s
-.PHONY : bitcoin.s
+src/bitcoin.s: src/bitcoin.cc.s
+.PHONY : src/bitcoin.s
 
 # target to generate assembly for a file
-bitcoin.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BER.dir/build.make CMakeFiles/BER.dir/bitcoin.cc.s
-.PHONY : bitcoin.cc.s
+src/bitcoin.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BER.dir/build.make CMakeFiles/BER.dir/src/bitcoin.cc.s
+.PHONY : src/bitcoin.cc.s
+
+src/main.o: src/main.cc.o
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BER.dir/build.make CMakeFiles/BER.dir/src/main.cc.o
+.PHONY : src/main.cc.o
+
+src/main.i: src/main.cc.i
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BER.dir/build.make CMakeFiles/BER.dir/src/main.cc.i
+.PHONY : src/main.cc.i
+
+src/main.s: src/main.cc.s
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BER.dir/build.make CMakeFiles/BER.dir/src/main.cc.s
+.PHONY : src/main.cc.s
 
 # Help Target
 help:
@@ -162,9 +186,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... BER"
-	@echo "... bitcoin.o"
-	@echo "... bitcoin.i"
-	@echo "... bitcoin.s"
+	@echo "... src/bitcoin.o"
+	@echo "... src/bitcoin.i"
+	@echo "... src/bitcoin.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 
