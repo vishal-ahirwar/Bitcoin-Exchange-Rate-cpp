@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named BER
+# Target rules for targets named bitcoin
 
 # Build rule for target.
-BER: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BER
-.PHONY : BER
+bitcoin: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bitcoin
+.PHONY : bitcoin
 
 # fast build rule for target.
-BER/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BER.dir/build.make CMakeFiles/BER.dir/build
-.PHONY : BER/fast
+bitcoin/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bitcoin.dir/build.make CMakeFiles/bitcoin.dir/build
+.PHONY : bitcoin/fast
 
 src/bitcoin.o: src/bitcoin.cc.o
 .PHONY : src/bitcoin.o
 
 # target to build an object file
 src/bitcoin.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BER.dir/build.make CMakeFiles/BER.dir/src/bitcoin.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bitcoin.dir/build.make CMakeFiles/bitcoin.dir/src/bitcoin.cc.o
 .PHONY : src/bitcoin.cc.o
 
 src/bitcoin.i: src/bitcoin.cc.i
@@ -142,7 +142,7 @@ src/bitcoin.i: src/bitcoin.cc.i
 
 # target to preprocess a source file
 src/bitcoin.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BER.dir/build.make CMakeFiles/BER.dir/src/bitcoin.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bitcoin.dir/build.make CMakeFiles/bitcoin.dir/src/bitcoin.cc.i
 .PHONY : src/bitcoin.cc.i
 
 src/bitcoin.s: src/bitcoin.cc.s
@@ -150,7 +150,7 @@ src/bitcoin.s: src/bitcoin.cc.s
 
 # target to generate assembly for a file
 src/bitcoin.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BER.dir/build.make CMakeFiles/BER.dir/src/bitcoin.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bitcoin.dir/build.make CMakeFiles/bitcoin.dir/src/bitcoin.cc.s
 .PHONY : src/bitcoin.cc.s
 
 src/curlHandler.o: src/curlHandler.cc.o
@@ -158,7 +158,7 @@ src/curlHandler.o: src/curlHandler.cc.o
 
 # target to build an object file
 src/curlHandler.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BER.dir/build.make CMakeFiles/BER.dir/src/curlHandler.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bitcoin.dir/build.make CMakeFiles/bitcoin.dir/src/curlHandler.cc.o
 .PHONY : src/curlHandler.cc.o
 
 src/curlHandler.i: src/curlHandler.cc.i
@@ -166,7 +166,7 @@ src/curlHandler.i: src/curlHandler.cc.i
 
 # target to preprocess a source file
 src/curlHandler.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BER.dir/build.make CMakeFiles/BER.dir/src/curlHandler.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bitcoin.dir/build.make CMakeFiles/bitcoin.dir/src/curlHandler.cc.i
 .PHONY : src/curlHandler.cc.i
 
 src/curlHandler.s: src/curlHandler.cc.s
@@ -174,7 +174,7 @@ src/curlHandler.s: src/curlHandler.cc.s
 
 # target to generate assembly for a file
 src/curlHandler.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BER.dir/build.make CMakeFiles/BER.dir/src/curlHandler.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bitcoin.dir/build.make CMakeFiles/bitcoin.dir/src/curlHandler.cc.s
 .PHONY : src/curlHandler.cc.s
 
 src/main.o: src/main.cc.o
@@ -182,7 +182,7 @@ src/main.o: src/main.cc.o
 
 # target to build an object file
 src/main.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BER.dir/build.make CMakeFiles/BER.dir/src/main.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bitcoin.dir/build.make CMakeFiles/bitcoin.dir/src/main.cc.o
 .PHONY : src/main.cc.o
 
 src/main.i: src/main.cc.i
@@ -190,7 +190,7 @@ src/main.i: src/main.cc.i
 
 # target to preprocess a source file
 src/main.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BER.dir/build.make CMakeFiles/BER.dir/src/main.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bitcoin.dir/build.make CMakeFiles/bitcoin.dir/src/main.cc.i
 .PHONY : src/main.cc.i
 
 src/main.s: src/main.cc.s
@@ -198,7 +198,7 @@ src/main.s: src/main.cc.s
 
 # target to generate assembly for a file
 src/main.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BER.dir/build.make CMakeFiles/BER.dir/src/main.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bitcoin.dir/build.make CMakeFiles/bitcoin.dir/src/main.cc.s
 .PHONY : src/main.cc.s
 
 # Help Target
@@ -209,7 +209,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... BER"
+	@echo "... bitcoin"
 	@echo "... src/bitcoin.o"
 	@echo "... src/bitcoin.i"
 	@echo "... src/bitcoin.s"
