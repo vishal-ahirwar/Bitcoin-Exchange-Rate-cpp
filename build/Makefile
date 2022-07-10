@@ -153,6 +153,30 @@ src/bitcoin.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BER.dir/build.make CMakeFiles/BER.dir/src/bitcoin.cc.s
 .PHONY : src/bitcoin.cc.s
 
+src/curlHandler.o: src/curlHandler.cc.o
+.PHONY : src/curlHandler.o
+
+# target to build an object file
+src/curlHandler.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BER.dir/build.make CMakeFiles/BER.dir/src/curlHandler.cc.o
+.PHONY : src/curlHandler.cc.o
+
+src/curlHandler.i: src/curlHandler.cc.i
+.PHONY : src/curlHandler.i
+
+# target to preprocess a source file
+src/curlHandler.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BER.dir/build.make CMakeFiles/BER.dir/src/curlHandler.cc.i
+.PHONY : src/curlHandler.cc.i
+
+src/curlHandler.s: src/curlHandler.cc.s
+.PHONY : src/curlHandler.s
+
+# target to generate assembly for a file
+src/curlHandler.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BER.dir/build.make CMakeFiles/BER.dir/src/curlHandler.cc.s
+.PHONY : src/curlHandler.cc.s
+
 src/main.o: src/main.cc.o
 .PHONY : src/main.o
 
@@ -189,6 +213,9 @@ help:
 	@echo "... src/bitcoin.o"
 	@echo "... src/bitcoin.i"
 	@echo "... src/bitcoin.s"
+	@echo "... src/curlHandler.o"
+	@echo "... src/curlHandler.i"
+	@echo "... src/curlHandler.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
