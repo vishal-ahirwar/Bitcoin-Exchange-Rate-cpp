@@ -1,7 +1,9 @@
+//Copyright(c)2022 Vishal Ahirwar.
 #include"../include/bitcoin.h"
-void BitCoin::fetch()
+BitCoin::json BitCoin::fetch()
 {
     this->curlHandle.fetch();
+    return json::parse(this->curlHandle.getFetchedData());
 };
 
 BitCoin::BitCoin():curlHandle({})

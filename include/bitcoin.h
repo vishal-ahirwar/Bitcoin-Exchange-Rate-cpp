@@ -1,14 +1,17 @@
 #ifndef BITCOIN_H
 #define BITCOIN_H
+//Copyright(c)2022 Vishal Ahirwar.
 #include <iostream>
 #include <string>
 #include <cstdio>
 #include "curlHandler.h"
+#include"json.hpp"
 
 class BitCoin
 {
+    using json=nlohmann::json;
 public:
-    void fetch();
+    json fetch();
     BitCoin();
 private:
     constexpr static const char*const URL="https://blockchain.info/ticker";
